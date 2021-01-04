@@ -1,7 +1,12 @@
 import React from "react";
 import "./StrongPointBox.css";
 
-function StrongPointBox() {
+interface Props {
+  title: string;
+  content: string;
+}
+const StrongPointBox: React.FC<Props> = ({ title, content }) => {
+  console.log(title, content);
   return (
     <div className="StrongPointBox">
       <div className="hexagon">
@@ -9,10 +14,10 @@ function StrongPointBox() {
           <div className="hexagon-in2"></div>
         </div>
       </div>
-      <p className="strong-point-heading">꾸준함</p>
-      <span className="strong-point-content">나는 꾸준하다구</span>
+      <p className="strong-point-heading">{title}</p>
+      <span className="strong-point-content">{content}</span>
     </div>
   );
-}
+};
 
 export default StrongPointBox;

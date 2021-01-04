@@ -5,6 +5,8 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  margin-top : 50px;
+  padding-top: 50px;
 }
 
 .about-heading {
@@ -14,10 +16,23 @@
   color: rgb(68, 70, 73);
   border-bottom: 5px solid rgb(68, 70, 73); 
   margin-bottom: 30px;
-  margin-top: 30px;
 }
 
 .StrongPoints {
   display: flex;
   flex-direction: row;
+}
+
+.Profile {
+  display: flex;
+  width: 60%;
+}
+
+.Profile-Image {
+  flex : 1;
+  margin : 10px auto;
+}
+
+.Profile-Stacks {
+  flex : 1;
 }

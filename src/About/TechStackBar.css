@@ -1,0 +1,13 @@
+.TechStackBar {
+  display: block;
+}
+
+.TechName {
+  font-family: Raleway;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.TechProgress {
+  margin-bottom: 10px;
+}
