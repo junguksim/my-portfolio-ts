@@ -1,0 +1,8 @@
+.heading-title {
+  font-family: raleway-bold;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(68, 70, 73);
+  border-bottom: 5px solid rgb(68, 70, 73); 
+  margin-bottom: 30px;
+}

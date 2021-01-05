@@ -1,4 +1,5 @@
 import React from "react";
+import HeadingTitle from "../HeadingTitle.component";
 import "./About.css";
 import aboutData from "./aboutData";
 import StrongPointBox from "./StrongPointBox.component";
@@ -22,7 +23,7 @@ function renderTechStacks() {
 function About() {
   return (
     <div className="About">
-      <span className="about-heading">ABOUT</span>
+      <HeadingTitle title={"ABOUT"} />
       <div className="StrongPoints">{renderStrongPointBoxes()}</div>
       <div className="Profile">
         <div className="Profile-Image">
