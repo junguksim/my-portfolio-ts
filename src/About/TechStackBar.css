@@ -1,13 +1,18 @@
 .TechStackBar {
-  display: block;
+  display: inline;
 }
 
 .TechName {
   font-family: Raleway;
   font-weight: 700;
   padding-right: 20px;
+  text-align: center;
 }
 
 .TechProgress {
+  margin-top: 5px;
+}
+
+.row {
   margin-bottom: 10px;
 }

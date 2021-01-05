@@ -10,9 +10,11 @@ interface Props {
 const TechStackBar: React.FC<Props> = ({ name, howMuchSkilled }) => {
   return (
     <div className="TechStackBar">
-      <span className="TechName">{name}</span>
-      <div className="TechProgress">
-        <ProgressBar now={howMuchSkilled} label={`${howMuchSkilled}%`} />
+      <div className="row">
+        <div className="TechName col-sm-3">{name}</div>
+        <div className="TechProgress col-sm-9">
+          <ProgressBar now={howMuchSkilled} label={`${howMuchSkilled}%`} />
+        </div>
       </div>
     </div>
   );

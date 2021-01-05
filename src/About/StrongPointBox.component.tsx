@@ -6,7 +6,6 @@ interface Props {
   content: string;
 }
 const StrongPointBox: React.FC<Props> = ({ title, content }) => {
-  console.log(title, content);
   return (
     <div className="StrongPointBox">
       <div className="hexagon">

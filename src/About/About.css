@@ -24,7 +24,7 @@
 }
 
 .Profile {
-  display: flex;
+  display: inline-flex;
   width: 60%;
 }
 

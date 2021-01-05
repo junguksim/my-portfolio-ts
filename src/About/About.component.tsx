@@ -1,57 +1,21 @@
 import React from "react";
 import "./About.css";
+import aboutData from "./aboutData";
 import StrongPointBox from "./StrongPointBox.component";
 import TechStackBar from "./TechStackBar.component";
 
-const myStrongPoints = [
-  {
-    title: "꾸준함",
-    content: "저는 꾸준합니다",
-  },
-  {
-    title: "배고픔",
-    content: "저는 배고픕니다",
-  },
-  {
-    title: "닭발",
-    content: "오늘은 닭발 먹을겁니다",
-  },
-  {
-    title: "맛있음",
-    content: "닭발은 맛있습니다.",
-  },
-];
-
-const myTechStacks = [
-  {
-    name: "Node.js",
-    howMuchSkilled: 90,
-  },
-  {
-    name: "Typescript",
-    howMuchSkilled: 70,
-  },
-  {
-    name: "Javascript",
-    howMuchSkilled: 90,
-  },
-  {
-    name: "NestJS",
-    howMuchSkilled: 50,
-  },
-];
-
+const { myStrongPoints, myTechStacks } = aboutData;
 function renderStrongPointBoxes() {
-  return myStrongPoints.map((strongPoint) => {
-    const { title, content } = strongPoint;
-    return <StrongPointBox title={title} content={content} />;
+  return myStrongPoints.map(({ title, content, id }) => {
+    return <StrongPointBox title={title} content={content} key={id} />;
   });
 }
 
 function renderTechStacks() {
-  return myTechStacks.map((techStack) => {
-    const { name, howMuchSkilled } = techStack;
-    return <TechStackBar name={name} howMuchSkilled={howMuchSkilled} />;
+  return myTechStacks.map(({ name, howMuchSkilled, id }) => {
+    return (
+      <TechStackBar name={name} howMuchSkilled={howMuchSkilled} key={id} />
+    );
   });
 }
 
