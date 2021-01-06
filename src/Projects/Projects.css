@@ -10,13 +10,11 @@
 
 .projects-table {
   display: table;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .project-cell {
-  display: table-cell;
-  padding: 50px;
-}
-
-.project-row {
-  display: table-row;
+  padding: 0px;
+  vertical-align: top;
 }

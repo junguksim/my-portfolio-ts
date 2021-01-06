@@ -9,7 +9,7 @@ const renderProjects = () => {
   return projectsArr.map(
     ({ title, isUploaded, imageUrl, description, clickLinkUrl, id }) => {
       return (
-        <div className="project-cell">
+        <td className="project-cell">
           <ProjectDetail
             key={id}
             title={title}
@@ -18,7 +18,7 @@ const renderProjects = () => {
             description={description}
             clickLinkUrl={clickLinkUrl}
           />
-        </div>
+        </td>
       );
     }
   );
@@ -28,9 +28,9 @@ const Projects = () => {
   return (
     <div className="projects">
       <HeadingTitle title={"PROJECTS"} />
-      <div className="projects-table">
-        <div className="projects-row">{renderProjects()}</div>
-      </div>
+      <table className="projects-table">
+        <tr>{renderProjects()}</tr>
+      </table>
     </div>
   );
 };

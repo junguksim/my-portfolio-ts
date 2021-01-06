@@ -19,18 +19,16 @@ const ProjectDetail: React.FC<Props> = ({
   const hoverButtonText = isUploaded ? "Link" : "Github";
   return (
     <div className="project-detail">
-      <div className="project-summary">
-        <div className="project-thumbnail">
-          <img src={imageUrl} alt={title}></img>
-          <div className="overlay"></div>
-          <div className="project-thumbnail-button">
-            <a href={clickLinkUrl}>{hoverButtonText}</a>
-          </div>
+      <div className="project-thumbnail">
+        <img src={imageUrl} alt={title}></img>
+        <div className="overlay"></div>
+        <div className="project-thumbnail-button">
+          <a href={clickLinkUrl}>{hoverButtonText}</a>
         </div>
-        <div className="project-title-and-summary">
-          <p className="project-title">{title}</p>
-          <span className="project-summary-description">{description}</span>
-        </div>
+      </div>
+      <div className="project-title-and-summary">
+        <p className="project-title">{title}</p>
+        <span className="project-summary-description">{description}</span>
       </div>
     </div>
   );
